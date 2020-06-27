@@ -37,7 +37,7 @@ scipy==1.2.2
 singledispatch==3.4.0.3
 six==1.15.0
 tensorboard==2.1.0
-tensorflow==1.13.2
+tensorflow==1.15.2
 tensorflow-estimator==2.1.0
 termcolor==1.1.0
 tqdm==4.46.1
