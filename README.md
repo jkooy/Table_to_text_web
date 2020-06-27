@@ -45,11 +45,13 @@ We strongly recommended using GPUs to train the model. It takes about 36 hours t
 
 The implementation is based on Tensorflow 1.1.4. You can find the installation instructions [here](https://www.tensorflow.org/versions/r1.1/install/).
 
+<!--
 ### Dependencies
-```requirements.txt``` summarize the dependencies of our code. You can install these dependencies by:
+```requirements.txt``` summarize the dependencies of our code. 
 ```
 pip install -r requirements.txt
 ```
+--!>
 
 ## Data
 The dataset for evaluation is [WIKIBIO](https://github.com/DavidGrangier/wikipedia-biography-dataset) from [Lebret et al. 2016](https://arxiv.org/abs/1603.07771). We preprocess the dataset in a easy-to-use way.
