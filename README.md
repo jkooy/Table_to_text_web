@@ -1,8 +1,12 @@
-# Table_to_text_web
-<p align="center"><img width="60%" src="doc/home.png"/></p>
-<p align="center"><img width="60%" src="doc/result.png"/></p>
-
+# Table to text
 This project provides the demo of table-to-text (infobox-to-biography) based on this [paper](https://tyliupku.github.io/papers/aaai2018_liu.pdf). 
+
+# Input table:
+<p align="center"><img width="80%" src="doc/home.png"/></p>
+
+# Output summary:
+<p align="center"><img width="80%" src="doc/result.png"/></p>
+
 
 # Setting up the environment
 ```
@@ -13,7 +17,7 @@ conda env create -f environment.yml
 ```
 python app.py
 ```
-
+The page will be running on port ```5000```
 
 # wiki2bio
 <p align="center"><img width="60%" src="doc/task.png"/></p>
