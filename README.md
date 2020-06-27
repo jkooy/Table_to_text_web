@@ -8,6 +8,7 @@ This project provides the demo of table-to-text (infobox-to-biography) based on 
 ## Setting up the environment
 ```
 conda env create -f environment.yml
+conda activate table_to_txt
 ```
 
 ## Run the demo web page locally
