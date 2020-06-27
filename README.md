@@ -17,10 +17,10 @@ python app.py
 The page will be running on port ```5000```
 
 Input table:
-<p align="center"><img width="80%" src="doc/home.png"/></p>
+<p align="center"><img width="100%" src="doc/home.png"/></p>
 
 Output summary:
-<p align="center"><img width="80%" src="doc/result.png"/></p>
+<p align="center"><img width="100%" src="doc/result.png"/></p>
 
 # Training the model yourself
 ## wiki2bio
