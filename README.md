@@ -17,6 +17,8 @@ python app.py
 ```
 The page will be running on port ```5000```
 
+open ```http://0.0.0.0:5000/``` and test your input.
+
 Input table:
 <p align="center"><img width="100%" src="doc/home.png"/></p>
 
