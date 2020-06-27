@@ -238,7 +238,7 @@ def tanks():
     else:
         label = 1 - label_temp
 
-    save_review(review,label)
+#     save_review(review,label)
     return render_template("tanks.html")
 
 class ReviewForm(Form):
