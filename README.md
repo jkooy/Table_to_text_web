@@ -1,9 +1,26 @@
+# Table_to_text_web
+<p align="center"><img width="60%" src="doc/home.png"/></p>
+<p align="center"><img width="60%" src="doc/result.png"/></p>
+
+This project provides the demo of table-to-text (infobox-to-biography) based on this [paper](https://tyliupku.github.io/papers/aaai2018_liu.pdf). 
+
+# Setting up the environment
+```
+conda env create -f environment.yml
+```
+
+# Run the demo web page locally
+```
+python app.py
+```
+
+
 # wiki2bio
 <p align="center"><img width="60%" src="doc/task.png"/></p>
 
 This project provides the implementation of table-to-text (infobox-to-biography) generation, taking the structure of a infobox for consideration.
 
-Details of table-to-text generation can be found [here](https://tyliupku.github.io/papers/aaai2018_liu.pdf). The implementation is based on Tensorflow 1.0.0 and Python 2.7.
+Details of table-to-text generation can be found [here](https://tyliupku.github.io/papers/aaai2018_liu.pdf). The implementation is based on Tensorflow 1.4.1 and Python 2.7.
 
 # Model Overview
 <p align="center"><img width="85%" src="doc/frame.png"/></p>
@@ -16,9 +33,10 @@ In the decoding phase, dual attention mechanism which contains word level attent
 to model the semantic relevance between the generated description and the table.
 
 # Installation
-We strongly recommended using GPUs to train the model. It takes about 36~48 hours to finish training on a GTX1080 GPU.
+We strongly recommended using GPUs to train the model. It takes about 36 hours to finish training on a GTX1080Ti GPU. In this demo we use the pretrained model trained by us. You can also train it yourself following the setps below.
+
 ## Tensorflow
-Our code is based on Tensorflow 1.0.0. You can find the installation instructions [here](https://www.tensorflow.org/versions/r1.1/install/).
+The code is based on Tensorflow 1.1.4. You can find the installation instructions [here](https://www.tensorflow.org/versions/r1.1/install/).
 ## Dependencies
 ```requirements.txt``` summarize the dependencies of our code. You can install these dependencies by:
 ```
@@ -100,17 +118,3 @@ Then test your model by running:
 python Main.py
 ```
 
-# Reference
-If you find the code and data resources helpful, please cite the following paper:
-```
-@article{liu2017table,
-  title={Table-to-text Generation by Structure-aware Seq2seq Learning},
-  author={Liu, Tianyu and Wang, Kexiang and Sha, Lei and Chang, Baobao and Sui, Zhifang},
-  journal={arXiv preprint arXiv:1711.09724},
-  year={2017}
-}
-```
-# table_to_text
-# table_to_text
-# Table_to_text_web
-# Table_to_text_web
