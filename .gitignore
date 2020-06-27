@@ -1,3 +1,2 @@
-original_data/*
 processed_data/test/test_split_for_rouge
-results/*
+results/evaluation
