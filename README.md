@@ -1,10 +1,10 @@
 # Table to text
 This project provides the demo of table-to-text (infobox-to-biography) based on this [paper](https://tyliupku.github.io/papers/aaai2018_liu.pdf). 
 
-# Input table:
+Input table:
 <p align="center"><img width="80%" src="doc/home.png"/></p>
 
-# Output summary:
+Output summary:
 <p align="center"><img width="80%" src="doc/result.png"/></p>
 
 
