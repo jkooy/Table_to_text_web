@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<style>
+#count{
+    word-wrap: break-word;
+    word-break: normal;
+    color:rgb(53,73,94);
+    }
+/* form{ height:200px; width:500px; border:1px solid #666666;} */
+/*     dl{ height:200px; width:500px; } */
+</style>
+<body>
+    <h3 align = "center"><font face = "Arial" color = "red" size="6">Demo of table to text generation</font ></h3>
+    <hr/>
+    {% from "_formhelpers.html" import render_field %}
+    <div class="content_div">
+        <div><font size="4">Please enter the table</font></div>
+<!--         <div><font size="3">The table input is:</font></div> -->
+        <form method="post" action="/main" style="height=200px;width=500px;" >
+ <!--           <dl >
+                {{ render_field(form.review) }}
+            </dl>
+             <div>The second row is?</div>
+            <dl>
+                {{ render_field(form.review) }}
+            </dl> -->
+           
+            <dl>
+                
+    <dt><label for="review"></label>
+    </dt><dd>
+    <textarea id="review" name="review" required="" style="margin: 0px; width: 375px; height: 173px;"></textarea>
+    
+</dd>
+
+            </dl>
+            
+            <input type="submit" value="submit table" name="submit_btn">
+        </form>
+    </div>
+    
+    
+    
+    
+    <hr/>
+    <div class="example input" >
+        <div><font size="4">Example input: 
+<!--             (follow the same data structure in this <a href="https://drive.google.com/file/d/15AV8LeWY3nzCKb8RRbM8kwHAp_DUZ5gf/view" target="_blank">Google Drive </a>)</font> </div> -->
+        <ul>
+        <div id = "count">
+        <font size="2"> 
+        <li>        name_1:lenny\tname_2:randle\tposition_1:second\tposition_2:baseman\tposition_3:/\tposition_4:third\tposition_5:baseman\timage:<none>\tbats_1:switch\tthrows_1:right\tbirth_date_1:12\tbirth_date_2:february\tbirth_date_3:1949\tbirth_place_1:long\tbirth_place_2:beach\tbirth_place_3:,\tbirth_place_4:california\tdeath_date:<none>\tdeath_place:<none>\tdebutdate_1:june\tdebutdate_2:16\tdebutyear_1:1971\tdebutteam_1:washington\tdebutteam_2:senators\tfinaldate_1:june\tfinaldate_2:20\tfinalyear_1:1982\tfinalteam_1:seattle\tfinalteam_2:mariners\tstatlabel_1:batting\tstatlabel_2:average\tstatlabel_3:home\tstatlabel_4:runs\tstatlabel_5:runs\tstatlabel_6:batted\tstatlabel_7:in\tstatvalue_1:.257\tstatvalue_2:27\tstatvalue_3:322\tteams:<none>\tarticle_title_1:lenny\tarticle_title_2:randle     
+        </li>
+        <li> 
+         name_1:peter\tname_2:curran\timage:<none>\tcaption:<none>\tbirth_date:<none>\tbirth_place_1:belfast\tbirth_place_2:,\tbirth_place_3:northern\tbirth_place_4:ireland\tarticle_title_1:peter\tarticle_title_2:curran\tarticle_title_3:-lrb-\tarticle_title_4:presenter\tarticle_title_5:-rrb-
+        </li>
+        </font>
+        </div> 
+        </ul>
+    </div>
+       
+    <!--
+    <hr/>
+    <div class="example input" >
+        <div><font size="4">Reference:</font></div>
+        <div id = "count">
+        <font size="3"> 
+            The implementation of the table-to-text (infobox-to-biography) generation model is based on setting in the paper <a href="https://github.com/tyliupku/wiki2bio/tree/421a002dead47d37280240a9c6a114eb4d3e437d" target="_blank">Table-to-text Generation by Structure-aware Seq2seq Learning.</a> 
+            <p>The code is implemented in Tensorflow 1.3 and trained on one GTX1080 Ti for approximately one day and a half.</p>
+            <p>The final BLEU is only 21.</p>
+        </font>
+        </div> 
+     </div>            
+     <div class="footer" >
+      <div class="container">
+          <font size="1"> 
+        Copyright © Xuehai He 2020 
+        <p class="last-update">
+          Last Updated:
+          <script language="JavaScript">
+            document.write(document.lastModified);
+          </script>
+         </p>
+         </font>
+      </div>
+    </div>  
+    --!>
+
+</body>
+</html>

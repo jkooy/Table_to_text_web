@@ -1,0 +1,17 @@
+body{
+ font-size:2em;
+}
+
+<style type="text/css">
+.example input{  width: 100%;  
+    height: auto;  
+    word-wrap:break-word;  
+    word-break:break-all;  
+    overflow: hidden;  }
+</style>
+
+#count{
+    word-wrap: break-word;
+    word-break: normal;
+    color:rgb(53,73,94);
+    }
