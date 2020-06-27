@@ -1,11 +1,7 @@
 # Table to text
 This project provides the demo of table-to-text (infobox-to-biography) based on this [paper](https://tyliupku.github.io/papers/aaai2018_liu.pdf). 
 
-Input table:
-<p align="center"><img width="80%" src="doc/home.png"/></p>
 
-Output summary:
-<p align="center"><img width="80%" src="doc/result.png"/></p>
 
 
 # Run the demo
@@ -20,6 +16,11 @@ python app.py
 ```
 The page will be running on port ```5000```
 
+Input table:
+<p align="center"><img width="80%" src="doc/home.png"/></p>
+
+Output summary:
+<p align="center"><img width="80%" src="doc/result.png"/></p>
 
 # Training the model yourself
 ## wiki2bio
