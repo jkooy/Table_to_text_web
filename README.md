@@ -30,6 +30,8 @@ This project provides the implementation of table-to-text (infobox-to-biography)
 
 Details of table-to-text generation can be found [here](https://tyliupku.github.io/papers/aaai2018_liu.pdf). The implementation is based on Tensorflow 1.1.4 and Python 2.7.
 
+In this demo the pretrained model is provided by us.  You can also train the model yourself following the steps below.
+
 ## Model Overview
 <p align="center"><img width="85%" src="doc/frame.png"/></p>
 wiki2bio is a natural language generation task which transforms Wikipedia infoboxes to corresponding biographies.
@@ -41,7 +43,7 @@ In the decoding phase, dual attention mechanism which contains word level attent
 to model the semantic relevance between the generated description and the table.
 
 ## Installation
-We strongly recommended using GPUs to train the model. It takes about 36 hours to finish training on a GTX1080Ti GPU. In this demo we use the pretrained model trained by us. You can also train it yourself following the steps below.
+We strongly recommended using GPUs to train the model. It takes about 36 hours to finish training on a GTX1080Ti GPU. 
 
 The implementation is based on Tensorflow 1.1.4. You can find the installation instructions [here](https://www.tensorflow.org/versions/r1.1/install/).
 
