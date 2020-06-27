@@ -28,7 +28,7 @@ Output summary:
 
 This project provides the implementation of table-to-text (infobox-to-biography) generation, taking the structure of a infobox for consideration.
 
-Details of table-to-text generation can be found [here](https://tyliupku.github.io/papers/aaai2018_liu.pdf). The implementation is based on Tensorflow 1.4.1 and Python 2.7.
+Details of table-to-text generation can be found [here](https://tyliupku.github.io/papers/aaai2018_liu.pdf). The implementation is based on Tensorflow 1.1.4 and Python 2.7.
 
 ## Model Overview
 <p align="center"><img width="85%" src="doc/frame.png"/></p>
