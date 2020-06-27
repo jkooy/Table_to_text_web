@@ -8,12 +8,13 @@ Output summary:
 <p align="center"><img width="80%" src="doc/result.png"/></p>
 
 
-# Setting up the environment
+# Run the demo
+## Setting up the environment
 ```
 conda env create -f environment.yml
 ```
 
-# Run the demo web page locally
+## Run the demo web page locally
 ```
 python app.py
 ```
