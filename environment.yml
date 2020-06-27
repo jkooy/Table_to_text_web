@@ -1,0 +1,51 @@
+name: table_to_txt
+channels:
+  - defaults
+dependencies:
+  - ca-certificates=2020.1.1=0
+  - certifi=2019.11.28=py27_0
+  - libcxx=10.0.0=1
+  - libedit=3.1.20191231=haf1e3a3_0
+  - libffi=3.3=h0a44026_1
+  - markupsafe=1.1.1=py27h1de35cc_0
+  - ncurses=6.2=h0a44026_1
+  - openssl=1.1.1g=h1de35cc_0
+  - pip=19.3.1=py27_0
+  - python=2.7.18=h47d645e_1
+  - readline=8.0=h1de35cc_0
+  - setuptools=44.0.0=py27_0
+  - sqlite=3.32.3=hffcf06c_0
+  - tk=8.6.10=hb0a8c7a_0
+  - wheel=0.33.6=py27_0
+  - wtforms=2.3.1=py_0
+  - zlib=1.2.11=h1de35cc_3
+  - pip:
+    - absl-py==0.9.0
+    - astor==0.8.1
+    - backports-weakref==1.0.post1
+    - click==7.1.2
+    - enum34==1.1.10
+    - flask==1.1.2
+    - funcsigs==1.0.2
+    - futures==3.3.0
+    - gast==0.3.3
+    - google-pasta==0.2.0
+    - grpcio==1.30.0
+    - h5py==2.10.0
+    - itsdangerous==1.1.0
+    - jinja2==2.11.2
+    - keras-applications==1.0.8
+    - keras-preprocessing==1.1.2
+    - markdown==3.1.1
+    - mock==3.0.5
+    - numpy==1.16.6
+    - protobuf==3.12.2
+    - six==1.15.0
+    - tensorboard==1.14.0
+    - tensorflow==1.14.0
+    - tensorflow-estimator==1.14.0
+    - termcolor==1.1.0
+    - werkzeug==1.0.1
+    - wrapt==1.12.1
+prefix: /Users/jkooy/opt/anaconda3/envs/table
+
