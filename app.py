@@ -97,6 +97,7 @@ class Vocab(object):
     
     
 def convert_tab(sess, ib_in):
+    print('ustring input is:', ib_in)
     ib = ib_in.decode('string_escape')
     print('string input is:',ib)
     box_word, box_label, box_pos = [], [], []
@@ -178,7 +179,7 @@ def convert_tab(sess, ib_in):
                         encoder_add_pos=FLAGS.encoder_pos, learning_rate=FLAGS.learning_rate)
     sess.run(tf.global_variables_initializer())
     if FLAGS.load != '0':
-            model.load(save_dir)
+            model.load('1593400603919/')
     print('.......................input data........................', batch_data)
     
     predictions, atts = model.generate(batch_data, sess)
@@ -194,7 +195,7 @@ def convert_tab(sess, ib_in):
         real_sum, unk_sum, mask_sum = [], [], []
         for tk, tid in enumerate(summary):
             if tid == 3:
-                sub = item[np.argmax(atts[tk,: len(item)])]
+                sub = box_word[0][np.argmax(atts[tk,: len(item)])]
                 real_sum.append(sub)
 #                     mask_sum.append("**" + str(sub) + "**")
             else:
@@ -202,7 +203,7 @@ def convert_tab(sess, ib_in):
 #                     mask_sum.append(v.id2word(tid))
 #                 unk_sum.append(v.id2word(tid))
     print('pred set is:', ' '.join(real_sum))
-    pred_list = ' '.join(real_sum)
+    pred_list = ' '.join(real_sum).replace('-lrb-', '(').replace('-rrb-', ')')
     return pred_list  
 
 

@@ -1,0 +1,44 @@
+#######################################################
+load = <absl.flags._flag.Flag object at 0x7f064cb7afd0>
+fgate_encoder = <absl.flags._flag.BooleanFlag object at 0x7f064cb031d0>
+showprefixforinfo = <absl.flags._flag.BooleanFlag object at 0x7f065a9d4090>
+stderrthreshold = <absl.logging._StderrthresholdFlag object at 0x7f065a9cdfd0>
+emb_size = <absl.flags._flag.Flag object at 0x7f064cb7a990>
+op_conversion_fallback_to_while_loop = <absl.flags._flag.BooleanFlag object at 0x7f06590735d0>
+test_randomize_ordering_seed = <absl.flags._flag.Flag object at 0x7f06552a1d90>
+pos_size = <absl.flags._flag.Flag object at 0x7f064cb7aa90>
+field_size = <absl.flags._flag.Flag object at 0x7f064cb7aa10>
+target_vocab = <absl.flags._flag.Flag object at 0x7f064cb7ad90>
+alsologtostderr = <absl.flags._flag.BooleanFlag object at 0x7f065a9cdd90>
+logtostderr = <absl.flags._flag.BooleanFlag object at 0x7f065a9cdc90>
+source_vocab = <absl.flags._flag.Flag object at 0x7f064cb7ac10>
+decoder_pos = <absl.flags._flag.BooleanFlag object at 0x7f064cb032d0>
+field = <absl.flags._flag.BooleanFlag object at 0x7f064cb03210>
+epoch = <absl.flags._flag.Flag object at 0x7f064cb7ab90>
+field_vocab = <absl.flags._flag.Flag object at 0x7f064cb7ac90>
+log_dir = <absl.flags._flag.Flag object at 0x7f065a9cde50>
+test_tmpdir = <absl.flags._flag.Flag object at 0x7f06552a12d0>
+run_with_profiling = <absl.flags._flag.BooleanFlag object at 0x7f065a9c67d0>
+run_with_pdb = <absl.flags._flag.BooleanFlag object at 0x7f065a9c6c50>
+use_cprofile_for_profiling = <absl.flags._flag.BooleanFlag object at 0x7f065a9d4550>
+xml_output_file = <absl.flags._flag.Flag object at 0x7f0655243310>
+learning_rate = <absl.flags._flag.Flag object at 0x7f064cb7aed0>
+batch_size = <absl.flags._flag.Flag object at 0x7f064cb7ab10>
+encoder_pos = <absl.flags._flag.BooleanFlag object at 0x7f064cb03290>
+report = <absl.flags._flag.Flag object at 0x7f064cb7ae10>
+test_random_seed = <absl.flags._flag.Flag object at 0x7f0655324e90>
+dual_attention = <absl.flags._flag.BooleanFlag object at 0x7f064cb03190>
+hidden_size = <absl.flags._flag.Flag object at 0x7f064cb7a910>
+profile_file = <absl.flags._flag.Flag object at 0x7f065a9d4510>
+limits = <absl.flags._flag.Flag object at 0x7f064cb03150>
+position_vocab = <absl.flags._flag.Flag object at 0x7f064cb7ad10>
+verbosity = <absl.logging._VerbosityFlag object at 0x7f065a9cde90>
+pdb_post_mortem = <absl.flags._flag.BooleanFlag object at 0x7f065a9c6150>
+only_check_args = <absl.flags._flag.BooleanFlag object at 0x7f065a9d4590>
+test_srcdir = <absl.flags._flag.Flag object at 0x7f065529a710>
+mode = <absl.flags._flag.Flag object at 0x7f064cb7af50>
+v = <absl.logging._VerbosityFlag object at 0x7f065a9cde90>
+position = <absl.flags._flag.BooleanFlag object at 0x7f064cb03250>
+dir = <absl.flags._flag.Flag object at 0x7f064cb03090>
+#######################################################
+1 : loss = 14337.589, time = 5775.425 
