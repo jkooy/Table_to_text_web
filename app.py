@@ -225,7 +225,10 @@ def main():
         with tf.Session(config=config) as sess:
             pred_list  = convert_tab(sess, review_text)
         proba = pred_list
-        return render_template("reviewform.html",review=review_text,Y=1,label=None,probability=proba)
+
+        html_table = review_text.decode('string_escape').split('\t')
+
+        return render_template("reviewform.html",review=html_table,Y=1,label=None,probability=proba)
     return render_template("index.html",form=form)
 
 

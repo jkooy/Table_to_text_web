@@ -8,22 +8,43 @@
 <body>
     <h3 align = "center"><font face = "Arial" color = "red" size="6">Result page for summary</font ></h3>
     <hr/>
-    <h3><font size="4">Your input table:</font></h3>
-    <div class="example input"><font size="2">{{ review }}</font></div>
+    <h3><font size="4">Your input:</font></h3>
 
+    <div class="example input"><font size="2">{{ review }}
+
+    <hr/>
+
+        <h3><font size="4">Your input table:</font></h3>
+    <table border="1">
+            <tr>
+                <th>Name</th>
+                {% for review_i in review %}
+            <td>{{ review_i.split(':')[0]}}</td>
+      {% endfor %}
+            </tr>
+            <tr>
+               <th>Value</th>
+                 {% for review_i in review %}
+            <td>{{ review_i.split(':')[1]}}</td>
+      {% endfor %}
+            </tr>
+        </table>
+    </div>
+
+<hr/>
     <h3><font size="4">Prediction:</font></h3>
     <div class="example input"><font size="2">
         The summary is: <strong>{{ probability }}</strong>
 <!--         (current status: {{ probability }}).</font> -->
     </div>
-    <div>
-        <form action="/tanks" method="post">
-            <input type="submit" value="I think the summary is good" name="feedback_btn" />
-            <input type="submit" value="I think the summary is bad" name="feedback_btn" />
-            <input type="hidden" value="{{review}}" name="review"/>
-            <input type="hidden" value="{{Y}}" name="Y"/>
-        </form>
-    </div>
+<!--    <div>-->
+<!--        <form action="/tanks" method="post">-->
+<!--            <input type="submit" value="I think the summary is good" name="feedback_btn" />-->
+<!--            <input type="submit" value="I think the summary is bad" name="feedback_btn" />-->
+<!--            <input type="hidden" value="{{review}}" name="review"/>-->
+<!--            <input type="hidden" value="{{Y}}" name="Y"/>-->
+<!--        </form>-->
+<!--    </div>-->
     <div>
         <form action="/" >
             <input type="submit" value="submit another table" />
