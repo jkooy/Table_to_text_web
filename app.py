@@ -242,6 +242,11 @@ def tanks():
 #     save_review(review,label)
     return render_template("tanks.html")
 
+@app.route("/validation")
+def example():
+    form = ReviewForm(request.form)
+    return render_template("validation.txt", form=form)
+
 class ReviewForm(Form):
     review = TextAreaField("",[validators.DataRequired()])
 
