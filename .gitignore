@@ -1,3 +1,4 @@
 processed_data/test/test_split_for_rouge
 results/evaluation
 .DS_Store
+*/.DS_Store
