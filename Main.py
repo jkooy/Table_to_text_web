@@ -204,8 +204,6 @@ def output(sess, dataloader, model, ksave_dir, mode='valid'):
     box_word, box_label, box_pos = [], [], []
     ib = box[k]
 
-    
-#     ib = 'name_1:xuehau he\tname_2:ssss\tposition_1:second\tposition_2:hhhh'
     item = ib.split('\t')
     box_single_word, box_single_label, box_single_pos = [], [], []
     for it in item:
