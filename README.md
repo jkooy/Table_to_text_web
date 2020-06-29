@@ -46,9 +46,9 @@ In the decoding phase, dual attention mechanism which contains word level attent
 to model the semantic relevance between the generated description and the table.
 
 ## Installation
-We strongly recommended using GPUs to train the model. It takes about 36 hours to finish training on a GTX1080Ti GPU. 
+We strongly recommended using GPUs to train the model. It takes about 64 hours to finish training on a GTX1080Ti GPU and get a decent result. 
 
-The implementation is based on Tensorflow 1.1.4. You can find the installation instructions [here](https://www.tensorflow.org/versions/r1.1/install/).
+The implementation is based on Tensorflow 1.1.4. 
 
 
 
